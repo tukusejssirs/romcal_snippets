@@ -3,3 +3,7 @@ grep -o -n -H "blessedHroznataMartyr\|blessedHrzonataMartyr\|jesusChristTheEtern
 
 
 awk -F: '{printf $3 " :" $1":%03d\n", $2}' | sort | uniq | termux-clipboard-set
+
+diff -y --suppress-common-lines <(cat ~/git/romcal/romcal_ts_add_sk_l10n_2/src/locales/{cs.mjs,en*,fr.mjs,pl.mjs,skSk.mjs} | grep "^[ ]*\"" | sed 's/^[ ]*"\(.*\)"\:.*/\1/g' - | sort | uniq) <(cat ~/git/romcal/romcal_ts_add_sk_l10n_2/src/calendars/*.mjs | grep "^[ ]*\"key" | sed 's/^[ ]*"key"\: "\(.*\)".*/\1/g' - | sort | uniq)
+
+if [[ $n == $(cat ~/git/romcal/romcal_ts_add_sk_l10n_2/src/locales/{cs.mjs,en*,fr.mjs,pl.mjs,skSk.mjs} | grep "^[ ]*\"" | sed 's/^[ ]*"\(.*\)"\:.*/\1/g' - | sort | uniq | grep $n) ]]; then echo true; else echo false; fi

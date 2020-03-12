@@ -1,0 +1,53 @@
+- Translate all keys from `enUs.mjs` to Slovak; I did my best to translate the names of saints, blesseds and celebrations not found in GRC or Slovak particular calendar, however, there might be some mistakes;
+- Remove duplicates from `enUs.mjs`:
+  - `jesusChristTheEternalHighPriest`;
+  - `ourLadyOfFatima`;
+  - `ourLadyOfLourdes`;
+  - `ourLadyOfLujanPatronessOfArgentina`;
+  - `ourLadyOfMountCarmel`;
+  - `peterAndPaulApostles`;
+  - `presentationOfTheBlessedVirginMary`;
+  - `saintAndrewTheApostle`;
+  - `saintAugustineOfCanterburyBishop`;
+  - `saintBonifaceBishopAndMartyr`;
+  - `saintCasimir`;
+  - `saintCyrilOfJerusalemBishopAndDoctor`;
+  - `saintDenisAndCompanionsMartyrsSaintJohnLeonardiPriest`;
+  - `saintElizabethOfHungary`;
+  - `saintElizabethOfPortugal`;
+  - `saintFrancisXavierPriest`;
+  - `saintGregoryTheGreatPopeAndDoctor`;
+  - `saintHenryBishopAndMartyr`;
+  - `saintJohnOfKantyPriest`;
+  - `saintMariaGorettiVirginAndMartyr`;
+  - `saintNicholasBishop`;
+  - `saintPatrickBishop`;
+  - `saintPeterCanisiusPriestAndDoctor`;
+  - `saintPiusVPope`;
+  - `saintRaymondOfPenyafortPriest`;
+  - `saintsPhilipAndJamesApostles`;
+  - `saintStanislausBishopAndMartyr`;
+  - `saintStephenOfHungary`;
+  - `saintTeresaBenedictaOfTheCrossEdithSteinVirginAndMartyr`;
+  - `saintTeresaOfJesusVirginAndDoctorOfTheChurch`;
+  - `saintThomasBecketBishopAndMartyr`;
+  - `saintThomasTheApostle`;
+  - `saintVincentDeaconAndMartyr`;
+  - `visitationOfTheBlessedVirginMary`;
+- Remove duplicates from `fr.mjs`:
+  - `ourLadyOfGuadalupe`;
+  - `saintRaymondOfPenyafortPriest`;
+  - `saintTeresaBenedictaOfTheCrossEdithSteinVirginAndMartyr`;
+- Add `saintHelena` celebrated in Slovakia;
+- Re-add `saintsFelipeDeJesusPaulMikiAndCompanionsMartyrs` and `saintsPedroBautistaPaulMikiAndCompanionsMartyrs`
+- Correct some keys (in all calendars) and values (in `enUs.mjs` only):
+  - `blessedHrzonataMartyr` to `blessedHrzonataMartyr`;
+  - `saintFabianPopeAndMartyrAndSaintSebastianPopeAndMartyr` to `saintsFabianPopeAndSebastianMartyrs`;
+  - `saintJohnDamasceneOrSaintBarbara` to `saintJohnDamascenePriestAndDoctorOrSaintBarbaraVirginAndMartyr`
+  - `saintElizabethOfHungary` (`Saint Hilda, Abbess/Saint Hugh of Lincoln, Bishop/Saint Elizabeth of Hungary`) to `saintElizabethOfHungarySaintHildaAbbessSaintHughOfLincolnBishop` (`Saint Elizabeth of Hungary, Religious/Saint Hilda, Abbess/Saint Hugh of Lincoln, Bishop`);
+  - `saintJohnOfKantyPriest` to `saintJohnOfKentyPriest`;
+- Replace `'` with `’` in `fr.mjs`;
+- Replace changed key names in `src/calendars`:
+  - `chile.mjs`: `jesusChristTheEternalHighPriest` to `ourLordJesusChristTheEternalHighPriest`;
+	- `czechRepublic.mjs`: `blessedHrzonataMartyr` to `blessedHroznataMartyr`;
+	- `spain.mjs`: `jesusChristTheEternalHighPriest` to `ourLordJesusChristTheEternalHighPriest`.
